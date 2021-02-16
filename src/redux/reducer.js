@@ -1,7 +1,8 @@
-import { FETCH_DATA } from "./actions";
+import { FETCH_DATA, SEARCH } from "./actions";
 
 const initialState = {
   data: [],
+  searchResult: [],
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -11,6 +12,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         data: action.data,
+      };
+    case SEARCH:
+      return {
+        ...state,
+        searchResult: action.data,
       };
     default:
       return state;

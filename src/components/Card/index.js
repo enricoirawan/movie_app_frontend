@@ -5,7 +5,7 @@ function Card({ title, description, imageUrl, id }) {
   const baseUrl = "http://localhost/movie-app/backend/images/";
 
   return (
-    <div className="card mt-5">
+    <div className="card mt-3">
       <img
         src={baseUrl + imageUrl}
         alt={imageUrl}
