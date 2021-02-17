@@ -11,7 +11,6 @@ function Search() {
   const [keyword, setKeyword] = useState("");
 
   const handleSubmit = (event) => {
-    console.log(keyword);
     event.preventDefault();
     dispatch(actions.searchData(keyword));
     history.push(`/search/${keyword}`);

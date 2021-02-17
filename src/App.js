@@ -7,7 +7,7 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import reducer from "./redux/reducer";
 // page
-import { Details, Home, SearchResult } from "./pages";
+import { Details, Filter, Home, SearchResult } from "./pages";
 
 const rootReducer = combineReducers({
   movies: reducer,
@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/details/:id" component={Details} />
           <Route path="/search/:keyword" component={SearchResult} />
+          <Route path="/filter/:category" component={Filter} />
         </Switch>
       </Router>
     </Provider>

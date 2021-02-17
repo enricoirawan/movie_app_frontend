@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 // component
 import { Card, Category, Navbar, Search } from "../../components";
-
 // redux
 import { useSelector } from "react-redux";
 import * as actions from "../../redux/actions";
@@ -32,7 +31,7 @@ function Home() {
             <Search />
           </div>
         </div>
-        <div className="row d-flex align-items-center justify-content-between">
+        <div className="row d-flex align-items-center justify-content-start">
           {data.map((item) => (
             <Card
               key={parseInt(item.movie_id)}
