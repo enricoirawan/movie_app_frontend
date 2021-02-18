@@ -10,7 +10,7 @@ function Category({ label }) {
   const dispatch = useDispatch();
 
   const filterMovie = (label) => {
-    dispatch(actions.filterMovies(label));
+    dispatch(actions.filterMoviesByCategory(label));
   };
 
   const onClickHandler = (label) => {

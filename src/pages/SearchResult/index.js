@@ -10,9 +10,9 @@ function SearchResult() {
   const { keyword } = useParams();
   const data = useSelector((state) => state.movies.searchResult);
   return (
-    <div class="search-result-page">
+    <div className="search-result-page">
       <Navbar />
-      <div class="container mt-3">
+      <div className="container mt-3">
         <Link to="/">
           <button className="btn btn-secondary">Back</button>
         </Link>

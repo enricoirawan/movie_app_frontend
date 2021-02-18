@@ -22,7 +22,7 @@ function Search() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-inline mx-auto">
+    <form onSubmit={handleSubmit} className="form-inline">
       <input
         className="form-control mr-sm-2"
         placeholder="Search"

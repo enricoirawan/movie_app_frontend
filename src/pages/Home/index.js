@@ -27,9 +27,7 @@ function Home() {
             <Category label="Kpop" />
             <Category label="Romance" />
           </div>
-          <div>
-            <Search />
-          </div>
+          <Search />
         </div>
         <div className="row d-flex align-items-center justify-content-start">
           {data.map((item) => (
