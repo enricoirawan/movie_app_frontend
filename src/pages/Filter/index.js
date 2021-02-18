@@ -4,11 +4,18 @@ import { Navbar, Category, Search, Card } from "../../components";
 // react-router-dom
 import { useParams } from "react-router-dom";
 // react-redux
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import * as actions from "../../redux/actions";
 
 function Filter() {
-  const { params } = useParams();
+  const { category } = useParams();
+  const dispatch = useDispatch();
   const dataFilter = useSelector((state) => state.movies.filterResult);
+
+  useEffect(() => {
+    console.log(category);
+    dispatch(actions.filterMoviesByCategory(category));
+  }, [dispatch, category]);
 
   return (
     <div>
